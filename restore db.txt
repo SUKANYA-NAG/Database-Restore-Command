@@ -1,0 +1,23 @@
+Database Restore Command for Linux
+
+1.Download and install postgresql in specfic location.
+2.At first Extract/Unzip your database folder spcific loacation.
+3.open terminal write command
+    sudo -u postgres psql -p <db_port> 5432.
+    enter your system password.
+    Now your are coming inside postgres.
+4.Now create a database and here you restore your database.
+    command- create database<database_name>
+5. now coming that specifc location where you unzip your database folder.
+6.right click and open in terminal.
+7. write simple database restore command
+        psql -f <dump.sql> -d <database_name>
+
+
+Summary:
+1. open terminal write 
+        sudo -u postgres psql -p <db_port>5432
+        enter system password.
+2.create database <database_name>
+3.  write command
+        psql -f <dump.sql> -d <database_name> (after open specific location where you unzip your databse folder)
