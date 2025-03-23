@@ -1,0 +1,10 @@
+For windows restore database :-
+
+1.Go to sql shell.
+2.when coming shell give proper user name and password(which have db_user and db_password).
+3.Now you came into postgres and create new database.(CREATE DATABASE <database name>
+4.Go to the drive where install postgres(C:\Program Files\PostgreSQL\16\bin) type cmd this path,then write below command.
+5.psql -U <db_user(where create new database)> -d <database_name> -f <total path (upto dump.sql)>
+6.now give db_password.
+and
+pg_restore --verbose --no-acl --no-owner --host=localhost --dbname=ilunch_sylius dump.sql.
